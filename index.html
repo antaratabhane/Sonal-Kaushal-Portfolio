@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <meta http-equiv="Permissions-Policy" content="autoplay=(self), fullscreen=(self)">
+
+        <style>
+            body{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .bgvideo {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100vh;
+                width: 100vw;
+                object-fit: cover;
+                z-index: -1;
+            }
+
+            .Contentcontainer1{
+                box-sizing: content-box;
+                padding: 30px;
+            }
+
+            .Contentcontainer1 > .content{
+                display: grid;
+                grid-template-areas: "box1 box1 box1"
+                "box4 box5 box6"
+                "box7 box8 box9";
+                grid-template-columns: auto auto auto;
+                grid-template-rows: auto auto auto;
+                justify-content: space-around;
+                align-items: center;
+                background: transparent;
+                backdrop-filter: blur(5px);
+                border-radius: 15px;
+            }
+
+            .box1{
+                grid-area: box1;
+                border: 1px solid black;
+                height: 100px;
+                width: 1000px;
+                border-radius: 10px;
+                margin: 10px;
+                border-color: white;
+            }
+
+            .box4{
+                grid-area: box4;
+                border: 1px solid black;
+                height: 100px;
+                margin: 10px; 
+                border-radius: 10px; 
+                border-color: white; 
+            }
+
+            .box5{
+                grid-area: box5;
+                border: 1px solid black;
+                height: 100px;
+                margin: 10px;
+                border-radius: 10px;
+                border-color: white;
+            }
+
+            .box6{
+                grid-area: box6;
+                border: 1px solid black;
+                height: 100px;
+                margin: 10px;
+                border-radius: 10px;
+                border-color: white;
+            }
+
+            .box7{
+                grid-area: box7;
+                border: 1px solid black;
+                height: 100px;
+                margin: 10px;
+                border-radius: 10px;
+                border-color: white;
+            }
+
+            .box8{
+                grid-area: box8;
+                border: 1px solid black;
+                height: 100px;
+                margin: 10px;
+                border-radius: 10px;
+                border-color: white;
+            }
+
+            .box9{
+                grid-area: box9;
+                border: 1px solid black;
+                height: 100px;
+                margin: 15px;
+                border-radius: 10px;
+                border-color: white;
+            }
+
+            .contentContainer2{
+                width: 1000px;
+                height: 450px;
+                backdrop-filter: blur(5px);
+                border-radius: 20px;
+            }
+
+            .text-indent{
+                text-indent: 5rem;
+            }
+
+            .contentContainer3{
+                height: 750px; 
+                width: 1000px;
+                color: white;
+                backdrop-filter: blur(5px);
+                border-radius: 20px;
+            }
+
+            .contentContainer3 > .rowes{
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .contentContainer3 > .rowes > .box{
+                height: 290px;
+                width: 250px;
+                background-color: #12086f;
+                margin: 0;
+                overflow: hidden;
+                border-radius: 20px;
+            }
+
+            .contentContainer4{
+                height: 200px;
+                width: 1000px;
+                backdrop-filter: blur(5px);
+                border-radius: 20px;
+            }
+
+            .contentContainer4 > .contact-text{
+                display: flex;
+                justify-content: space-around;
+                color: white;
+            }
+
+            .contentContainer4 > .contact-text > .contactBox{
+                height: 100px;
+                width: 300px;
+                border-radius: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid white;
+            }
+
+            .contentContainer5 > .button{
+                height: 50px;
+                width: 200px;
+                border-radius: 30px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <video class="bgvideo" autoplay muted loop playsinline>
+            <source src="7101913-uhd_2560_1440_25fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="container d-flex justify-content-center mt-4">
+            <img src="Sonal Kaushal.png" class="rounded-circle" style="border: 8px solid white">
+        </div>
+
+        <div class="Contentcontainer1 d-flex justify-content-center mb-4 text-light">
+            <div class="content mt-4 text-center">
+                <div class="box1 d-flex justify-content-center align-items-center">
+                    <div class="h3 fw-bold">Personal Information About Sonal Kaushal</div>
+                </div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box4 d-flex justify-content-center align-items-center fs-5 fw-bold">
+                    <img src="icons/user (1).png" class="me-3">
+                    Sonal Kaushal
+                </div>
+                <div class="box5 d-flex justify-content-center align-items-center fs-5 fw-bold">
+                    <img src="icons\open-mail.png" class="me-3">
+                    sonalkaushal@gmail.com
+                </div>
+                <div class="box6 d-flex justify-content-center align-items-center fs-5 fw-bold">
+                    <img src="icons\smartphone.png" class="me-3">
+                    +91 9824651808
+                </div>
+                <div class="box7 d-flex justify-content-center align-items-center fs-5 fw-bold">
+                    <img src="icons\pin-map.png" class="me-3">
+                    Mumbai, India
+                </div>
+                <div class="box8 d-flex justify-content-center align-items-center fs-5 fw-bold">
+                    <img src="icons\cake.png" class="me-3">
+                    21 June, 1991
+                </div>
+                <div class="box9 d-flex justify-content-center align-items-center fs-5 fw-bold">
+                    <img src="icons\briefcase.png" class="me-3">
+                    Voice Artist
+                </div>
+            </div>
+        </div>
+
+        <div class="contentContainer2 mx-auto d-flex flex-column mb-4 text-light">
+            <h3 class="text-center pt-2 fw-bold">About Me</h3>
+            <p class="text-indent p-3 fs-5 fw-bold">
+                I’ve been a professional voice artist for over 20 years now.
+                My journey began when I was just 8 years old, recording for All India Radio. 
+                At 13, I got the opportunity to voice Doraemon in Hindi, 
+                which became one of the most iconic roles of my career. 
+                Since then, I’ve voiced a wide range of characters across cartoons, 
+                films, TV shows, and digital platforms—like Chhota Bheem, Pikachu,
+                Bubbles from Powerpuff Girls, and even Arya Stark from Game of Thrones.
+            </p>
+            <p class="text-indent p-3 fs-5 fw-bold">
+                Over the years, I’ve worked with major studios and networks, 
+                dubbing in Hindi and other Indian languages. 
+                I also started my YouTube channel The Motor Mouth, 
+                where I share voice challenges, behind-the-scenes moments, 
+                and connect with fans. Voice acting has given me a creative space to experiment, 
+                grow, and bring life to characters that kids and adults love. 
+                It's been a fulfilling and exciting experience every step of the way.
+            </p>
+        </div>
+
+        <div class="contentContainer3 mx-auto d-flex flex-column mb-4 fs-5 fw-bold">
+            <h3 class="d-flex justify-content-center mt-3 mb-3">My dubbed Characters</h3>
+            <div class="rowes mt-3 mb-4">
+                <div class="box">
+                    <img src="cartoons\Ben10.png">
+                    <div class="text-center mt-1">Ben10</div>
+                </div>
+                <div class="box">
+                    <img src="cartoons\doremon.png">
+                    <div class="text-center mt-1"> Doremon</div>
+                </div>
+                <div class="box">
+                    <img src="cartoons\Mandy.png">
+                    <div class="text-center mt-1">Mandy</div>
+                </div>
+            </div>
+
+            <div class="rowes mt-3 mb-5">
+                <div class="box">
+                    <img src="cartoons\bubbles.png">
+                    <div class="text-center mt-1">Bubbles</div>
+                </div>
+                <div class="box">
+                    <img src="cartoons\young goku.png">
+                    <div class="text-center mt-1">Young Goku</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contentContainer4 mx-auto mt-4 mb-4 fs-5 fw-bold">
+            <h3 class="d-flex justify-content-center mt-3 mb-4 fw-bold text-light">Get In Touch</h3>
+            <div class="contact-text mt-3">
+                <div class="contactBox">
+                    <img src="icons\open-mail.png" class="me-3">
+                    <span class="fs-6">sonalkaushal@gmail.com</span>
+                </div>
+                <div class="contactBox">
+                    <img src="icons\smartphone.png" class="me-3">
+                    +91 9824651808
+                </div>
+                <div class="contactBox">
+                    <img src="icons\pin-map.png" class="me-3">
+                    Mumbai, India
+                </div>
+            </div>
+        </div>
+
+        <div class="contentContainer5 d-flex justify-content-center mt-4 mb-5">
+            <div class="fs-5 button d-flex justify-content-center align-items-center bg-primary fs-5 fw-bold">
+                <img src="icons\telegram(1).png" class="me-2"> <span class="text-light">Contact Me</span>
+            </div>
+        </div>
+
+        <script>
+            function handlePageHide() {
+                const video = document.querySelector('.bgvideo');
+                if (video) {
+                    video.pause();[]
+                }
+            }
+
+            window.addEventListener('pagehide', handlePageHide);
+        </script>
+
+    </body>
+</html>
